@@ -49,12 +49,12 @@ const App = () => {
     
     const liveboardRef = useEmbedRef();
     
-    useEffect(() => {
-      const sessionCookie = document.cookie
-        .split('; ')
-        .find(row => row.startsWith('TS_SESSION='));
-      if (sessionCookie) setIsLoggedIn(true);
-    }, []);
+    // useEffect(() => {
+    //   const sessionCookie = document.cookie
+    //     .split('; ')
+    //     .find(row => row.startsWith('TS_SESSION='));
+    //   if (sessionCookie) setIsLoggedIn(true);
+    // }, []);
   
     const handleLogout = () => {
       logout();
