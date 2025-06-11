@@ -40,7 +40,8 @@ const getAuthToken = async () => {
 init({
   thoughtSpotHost: CONFIG.thoughtSpotHost,
   authType: CONFIG.authType,
-  getAuthToken: getAuthToken
+  getAuthToken: getAuthToken,
+  enableFullscreenPresentation: true,
 });
 
 const App = () => {
@@ -106,7 +107,7 @@ const App = () => {
             liveboardId={CONFIG.liveboardId}
             fullScreen={true}
             onExitPresentMode={() => {
-              console.log('onExitPresentMode called bro');
+              console.log('onExitPresentMode called ');
             }}
           />
         </div>
